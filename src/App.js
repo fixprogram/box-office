@@ -7,21 +7,17 @@ import Starred from './pages/Starred';
 
 const App = () => {
   return (
-    <div>
-      <Navs />
-
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/starred">
-          <Starred />
-        </Route>
-        <Route>
-          <div>Not found</div>
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/starred">
+        <Starred />
+      </Route>
+      <Route>
+        <div>Not found</div>
+      </Route>
+    </Switch>
   );
 };
 
